@@ -17,6 +17,8 @@ public:
 	void battle_display();
 	bool dead_check();
 	bool decision();
+	void show_hp();
+	void thanos();
 
 // CONSTRUCTOR
 monster(string n = "Monster", int hh = 6, int pp = 6, int atk = 6)
@@ -77,4 +79,11 @@ bool monster::decision(){
 	else return 0;
 }
 
+void monster::show_hp(){
+	cout << name << "'s HP: " << hp << "/" << maxhp << endl;
+}
+
+void monster::thanos(){
+	hp-=maxhp/2;
+}
 #endif
