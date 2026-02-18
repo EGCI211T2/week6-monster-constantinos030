@@ -47,6 +47,7 @@ int main(int argc, char* argv[]) {
 
 
   delete[] rand_bat;
+  delete[] thanosed;
 }//call des for A
   
   
